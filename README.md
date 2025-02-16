@@ -41,4 +41,5 @@ In PySpark,
 Careful while using COLLECT() on large dataset as it can crash the driver node
 HEAD() returns an array while LIMIT() returns a new DF
 TAKE() funnction calls COLLECT() on the LIMIT() function.
+
 ## Dataframe API with PySpark
