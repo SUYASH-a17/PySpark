@@ -40,6 +40,8 @@ Addtional comments
 In PySpark,
 Careful while using COLLECT() on large dataset as it can crash the driver node
 HEAD() returns an array while LIMIT() returns a new DF
-TAKE() funnction calls COLLECT() on the LIMIT() function.
 
+From the spark docs,
+TAKE() calls COLLECT() on the LIMIT() function.
+HEAD() returns TAKE() as they both return a list
 ## Dataframe API with PySpark
