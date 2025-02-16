@@ -30,9 +30,11 @@ For Pandas,
 df.head(n)   ## Returns the first n rows of the DF
 
 For Spark,
-df.take(n)  ## Returns the first n rows of the DF as a list
+df.take(n)    ## Returns the first n rows of the DF as a list
 df.collect()  ## Returns all the rows of the DF as a list
-df.show(n)  ## Returns the n rows in DF in tabular format
+df.show(n)    ## Returns the n rows in DF in tabular format
+df.limit(n)   ## Returns a new DF containing the 1st n rows
+df.head(n)    ## Returns the first n rows of the DF
 ```
 
 ## Dataframe API with PySpark
