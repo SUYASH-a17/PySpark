@@ -37,6 +37,8 @@ df.limit(n)   ## Returns a new DF containing the 1st n rows
 df.head(n)    ## Returns the first n rows of the DF
 ```
 Addtional comments
-In PySpark head returns an array while limit returns a new DF
+In PySpark,
+Careful while using COLLECT on large dataset as it can crash the driver node
+HEAD returns an array while LIMIT returns a new DF
 
 ## Dataframe API with PySpark
