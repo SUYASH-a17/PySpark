@@ -7,7 +7,7 @@ Learnig PySpark
 For Pandas,
 import pnadas
 
-##For PySpark 
+For PySpark 
 import pyspark
 from pyspark.sql import SparkSession
 spark = SparkSessioin.builder.getOrCreate()
