@@ -44,4 +44,24 @@ HEAD() returns an array while LIMIT() returns a new DF
 From the spark docs,
 TAKE() calls COLLECT() on the LIMIT() function.
 HEAD() returns TAKE() as they both return a list
+
+### Schemas
+```
+For pandas,
+df.dtype()
+
+For PySpark,
+df.dtype()
+df.printSchema()
+
+In PySpark we can explicitly define the schema
+from pyspark.sql.types import IntegerType, StringType, StructField, StructType
+schema = StructType([
+    StructField("column_1", IntegerType(), True),
+    StructField("column_2", StringType(), True),
+    StructField("column_3", IntegerType(), True)
+])
+
+```
+
 ## Dataframe API with PySpark
