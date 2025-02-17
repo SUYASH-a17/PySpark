@@ -38,7 +38,7 @@ df.head(n)    ## Returns the first n rows of the DF
 ```
 Addtional comments
 In PySpark,
-Careful while using COLLECT() on large dataset as it can crash the driver node //
+Careful while using COLLECT() on large dataset as it can crash the driver node /n
 HEAD() returns an array while LIMIT() returns a new DF
 
 From the spark docs,
