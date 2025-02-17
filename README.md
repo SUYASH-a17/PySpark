@@ -68,6 +68,6 @@ Additional comments
 InterType: It is used to define a column in a DataFrame that stores integer values.
 StringType: It is used to define a column in a DataFrame that stores string (text) values.
 StructField: Represents a field in a StructType. It defines the name, data type, and whether the field is nullable.
-StructType: Used to define the schema of a DataFrame, which includes multiple StructField elements.
+StructType: Used to define the schema of a DataFrame, which includes multiple StructField elements. It creates a structured schema for your DataFrame.
 
 ## Dataframe API with PySpark
