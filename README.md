@@ -42,7 +42,7 @@ Careful while using COLLECT() on large dataset as it can crash the driver node
 HEAD() returns an array while LIMIT() returns a new DF
 
 From the spark docs,
-TAKE() calls COLLECT() on the LIMIT() function.
+TAKE() calls COLLECT() on the LIMIT() function.  
 HEAD() returns TAKE() as they both return a list
 
 ### Schemas
@@ -65,9 +65,9 @@ schema = StructType([
 ```
 
 Additional comments 
-InterType: It is used to define a column in a DataFrame that stores integer values.
-StringType: It is used to define a column in a DataFrame that stores string (text) values.
-StructField: Represents a field in a StructType. It defines the name, data type, and whether the field is nullable.
-StructType: Used to define the schema of a DataFrame, which includes multiple StructField elements. It creates a structured schema for your DataFrame.
+InterType: It is used to define a column in a DataFrame that stores integer values.  
+StringType: It is used to define a column in a DataFrame that stores string (text) values.  
+StructField: Represents a field in a StructType. It defines the name, data type, and whether the field is nullable.  
+StructType: Used to define the schema of a DataFrame, which includes multiple StructField elements. It creates a structured schema for your DataFrame.  
 
 ## Dataframe API with PySpark
