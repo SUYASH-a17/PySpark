@@ -23,7 +23,17 @@ df = spark.read.format('csv').option(header=).load(filepath)
 OR
 df = spark.read.csv(filepath, header)
 ```
-
+### To import a csv file from a webpage using spark
+```
+url = "https://data.cityofchicago.org/resource/ijzp-q8t2.csv"
+response = requests.get(url)
+csv_data = StringIO(response.text)
+pandas_df = pd.read_csv(csv_data)
+# Convert the Pandas DataFrame to a Spark DataFrame
+df = spark.createDataFrame(pandas_df)
+# Display the first 5 rows of the DataFrame (optional)
+df.show(5)
+```
 ### To show the dataframe data
 ```
 For Pandas,
