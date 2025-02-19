@@ -25,6 +25,13 @@ df = spark.read.csv(filepath, header)
 ```
 ### To import a csv file from a webpage using spark
 ```
+import pyspark
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName("PySpark DF").getOrCreate()
+import pandas as pd
+import requests
+from io import StringIO
+
 url = "https://data.cityofchicago.org/resource/ijzp-q8t2.csv"
 response = requests.get(url)
 csv_data = StringIO(response.text)
