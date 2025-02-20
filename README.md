@@ -80,11 +80,20 @@ schema = StructType([
 ])
 
 ```
-
 Additional comments 
 InterType: It is used to define a column in a DataFrame that stores integer values.  
 StringType: It is used to define a column in a DataFrame that stores string (text) values.  
 StructField: Represents a field in a StructType. It defines the name, data type, and whether the field is nullable.  
 StructType: Used to define the schema of a DataFrame, which includes multiple StructField elements. It creates a structured schema for your DataFrame.  
+### Accessing the columns 
+```
+For Pandas,
+df.column1
+df['column1']
 
+For Pyspark,
+df.column1
+df['column1']
+df.select(col('column1'))
+```
 ## Dataframe API with PySpark
